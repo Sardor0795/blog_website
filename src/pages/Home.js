@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { collection, deleteDoc, doc, getDocs } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 
-const Home = ({isAuth}) => {
+const Home = ({ isAuth }) => {
   const [postLists, setPaosLists] = useState([]);
   const postsCollectionRef = collection(db, "posts");
 
